@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1016541912184",
+    "project_id": "projets4-d3262",
+    "storage_bucket": "projets4-d3262.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016541912184:android:93f73e1f75ac540a10218d",
+        "android_client_info": {
+          "package_name": "com.example.ps4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016541912184-io34kmo3iq6uv86v2lnr7h6nd6emiv5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW9MwevlEIYhHNht0O83VGvom8AG4Sl0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016541912184-io34kmo3iq6uv86v2lnr7h6nd6emiv5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
