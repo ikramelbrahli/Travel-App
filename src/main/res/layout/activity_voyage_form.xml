@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VoyageFormActivity">
+
     <View
         android:id="@+id/topView"
         android:layout_width="0dp"
@@ -26,33 +27,19 @@
 
     <TextView
         android:id="@+id/topText"
-        android:layout_width="437dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="116dp"
+        android:layout_width="400dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="80dp"
         android:text="@string/TripForm"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view5"
+
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/topView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="102dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="168dp"
-        android:contentDescription="@string/top_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/topView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/travel_icon" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nom_voyage"
@@ -68,53 +55,14 @@
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topText"
-        app:layout_constraintVertical_bias="0.173" />
-
-    <EditText
-        android:id="@+id/date_debut"
-        android:layout_width="339dp"
-        android:layout_height="53dp"
-        android:autofillHints=""
-        android:background="@drawable/round_border"
-
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="@string/date_debut"
-        android:inputType="textPersonName"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topText"
-        app:layout_constraintVertical_bias="0.331" />
-
-    <EditText
-        android:id="@+id/date_fin"
-        android:layout_width="339dp"
-        android:layout_height="53dp"
-        android:autofillHints=""
-        android:background="@drawable/round_border"
-
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="@string/date_fin"
-        android:inputType="textPersonName"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topText"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.074" />
 
     <EditText
         android:id="@+id/budget"
-        android:layout_width="339dp"
-        android:layout_height="53dp"
+        android:layout_width="344dp"
+        android:layout_height="54dp"
         android:autofillHints=""
         android:background="@drawable/round_border"
 
@@ -125,39 +73,99 @@
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.537"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topText"
-        app:layout_constraintVertical_bias="0.643" />
+
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        app:layout_constraintVertical_bias="0.065" />
 
     <Spinner
-        android:id="@+id/type_voyage"
-        android:layout_width="331dp"
-        android:layout_height="50dp"
+        android:id="@+id/spinner"
+        android:layout_width="352dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_border"
+        android:hint="Type de voyage "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintVertical_bias="0.593" />
 
     <Button
         android:id="@+id/okButton"
-        android:layout_width="143dp"
-        android:layout_height="51dp"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
         android:text="Plan my trip"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.858" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="64dp"
-        android:layout_height="77dp"
-        app:srcCompat="@drawable/ic_baseline_calendar_today_24"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="347dp" />
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="122dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_border"
+        android:hint="Date début"
+        android:textAlignment="center"
 
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom_voyage" />
+
+    <TextView
+        android:id="@+id/tvDate2"
+        android:layout_width="122dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_border"
+        android:hint="Date fin"
+        android:textAlignment="center"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/budget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom_voyage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="303dp"
+        android:layout_height="37dp"
+        android:background="#F6F6F6"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Is your trip solo or in group ?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budget"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okButton"
+        app:layout_constraintVertical_bias="0.76"
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>

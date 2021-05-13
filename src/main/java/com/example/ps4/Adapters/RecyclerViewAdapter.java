@@ -22,6 +22,7 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Protocol;
 import com.squareup.picasso.Picasso;
 
+import java.text.BreakIterator;
 import java.util.Arrays;
 import java.util.List;
 
@@ -31,16 +32,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private static final String TAG = null ;
     private List villeList;
-    private CitiesActivity villeListRecyclerViewOnItemClickListener;
+    private CitiesActivity.GetAllVillesOnCompleteListener.VilleListRecyclerViewOnItemClickListener villeListRecyclerViewOnItemClickListener;
     private Context context ;
-    public RecyclerViewAdapter(List villeList, CitiesActivity villeListRecyclerViewOnItemClickListener) {
+    public RecyclerViewAdapter(List villeList, CitiesActivity.GetAllVillesOnCompleteListener.VilleListRecyclerViewOnItemClickListener villeListRecyclerViewOnItemClickListener) {
         this.villeList = villeList;
         this.villeListRecyclerViewOnItemClickListener = villeListRecyclerViewOnItemClickListener;
     }
 
-    public RecyclerViewAdapter(List villeList) {
-        this.villeList = villeList;
-    }
+
+
 
     @NonNull
     @Override
@@ -61,13 +61,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.cityname.setText(ville.getNom_ville());
         holder.country.setText(ville.getNom_pays());
 
-        get()
+        Picasso.get()
                 .load(ville.getImageURI())
                 .into(holder.image_url , new com.squareup.picasso.Callback() {
-            @Override
-            public void onSuccess() {
-                // will load image
-            }
+                    @Override
+                    public void onSuccess() {
+                        // will load image
+                    }
 
                     @Override
                     public void onError(Exception e) {
@@ -76,9 +76,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 
 
-        });
-        holder.image_url.setImageURI(Uri.parse("https://firebasestorage.googleapis.com/v0/b/projets4-d3262.appspot.com/o/travel.jpg?alt=media&token=51af0d8b-55af-48c8-961b-01ade515e347"));
-        Log.d(TAG, ville.getImageURI() + " " + ville.getNom_ville());
+                });
+        Log.d(TAG, ville.getImageURI());
     }
 
 
@@ -88,9 +87,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     /** ViewHolder pattern: Inner class needed to keep the references between widgets and data to improve the performance */
-     class ViewHolder extends RecyclerView.ViewHolder {
+    static class ViewHolder extends RecyclerView.ViewHolder {
 
-       ImageView image_url;
+
+        ImageView image_url;
         TextView cityname;
         TextView country;
 

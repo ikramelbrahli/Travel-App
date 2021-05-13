@@ -10,7 +10,7 @@
         android:id="@+id/topView"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:background="@color/teal_200"
+        android:background="@color/test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -55,84 +55,42 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/travel_icon" />
 
-    <EditText
-        android:id="@+id/inputTripTitle"
-        android:layout_width="339dp"
-        android:layout_height="53dp"
-        android:autofillHints=""
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="122dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/round_border"
+        android:hint="Date début"
+        android:textAlignment="center"
+        android:textSize="20sp"
 
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="@string/Date_debut_reservation"
-        android:inputType="textPersonName"
-        android:padding="16dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topText"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.526" />
 
-    <EditText
-        android:id="@+id/inputTripTitle2"
-        android:layout_width="339dp"
-        android:layout_height="53dp"
-        android:autofillHints=""
+    <TextView
+        android:id="@+id/tvDate2"
+        android:layout_width="122dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/round_border"
-
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="@string/Date_find_reservation"
-        android:inputType="textPersonName"
-        android:padding="16dp"
+        android:hint="Date fin"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topText"
-        app:layout_constraintVertical_bias="0.34" />
-
-    <EditText
-        android:id="@+id/inputTripTitle3"
-        android:layout_width="339dp"
-        android:layout_height="53dp"
-        android:autofillHints=""
-        android:background="@drawable/round_border"
-
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="@string/heure_debut"
-        android:inputType="textPersonName"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topText"
-        app:layout_constraintVertical_bias="0.498" />
-
-    <EditText
-        android:id="@+id/inputTripTitle5"
-        android:layout_width="339dp"
-        android:layout_height="53dp"
-        android:autofillHints=""
-        android:background="@drawable/round_border"
-
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="@string/heure_fin"
-        android:inputType="textPersonName"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topText"
-        app:layout_constraintVertical_bias="0.647" />
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toEndOf="@+id/tvDate"
+        app:layout_constraintTop_toTopOf="@+id/topView"
+        app:layout_constraintVertical_bias="0.526" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/okButton"
         android:layout_width="143dp"
         android:layout_height="51dp"
         android:text="Add reservation"
@@ -140,6 +98,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.76" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="408dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okButton"
+        app:layout_constraintVertical_bias="0.929"
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

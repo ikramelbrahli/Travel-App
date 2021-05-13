@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".RowTripsActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="133dp"
+        android:layout_height="125dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_baseline_person_24" />
+
+
+    <LinearLayout
+        android:layout_width="255dp"
+        android:layout_height="178dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="227dp"
+            android:layout_height="44dp"
+            android:layout_margin="5dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="227dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:textColor="#a9a9a9"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

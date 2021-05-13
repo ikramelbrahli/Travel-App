@@ -17,7 +17,7 @@
         android:id="@+id/topView"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:background="@color/teal_200"
+        android:background="@color/test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -93,10 +93,19 @@
         app:layout_constraintTop_toTopOf="@+id/topView"
         app:layout_constraintVertical_bias="0.585" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listView">
+        android:layout_height="442dp">
 
     </ListView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </LinearLayout>

@@ -10,14 +10,14 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".RestaurantsActivity">
+        tools:context=".TripListActivity">
 
 
         <View
             android:id="@+id/topView"
             android:layout_width="0dp"
             android:layout_height="150dp"
-            android:background="@color/teal_200"
+            android:background="@color/test"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -81,8 +81,8 @@
         <TextView
             android:id="@+id/topText"
             android:layout_width="379dp"
-            android:layout_height="34dp"
-            android:text="@string/Hotels"
+            android:layout_height="44dp"
+            android:text="Restaurants"
             android:textColor="@android:color/black"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -94,10 +94,16 @@
             app:layout_constraintVertical_bias="0.585" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ListView
-        android:id="@+id/listView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurantsListRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="390dp" />
 
-    </ListView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
 </LinearLayout>

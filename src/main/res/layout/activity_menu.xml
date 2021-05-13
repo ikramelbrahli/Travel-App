@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="381dp"
         android:layout_height="115dp"
-        android:background="@color/teal_200"
+        android:background="@color/test2"
         android:elevation="20dp"
         android:padding="10dp"
         android:onClick="hotels"
@@ -42,7 +42,7 @@
         android:id="@+id/topView"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:background="@color/teal_200"
+        android:background="@color/test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -68,46 +68,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/topView"
         app:layout_constraintTop_toTopOf="@+id/topView"
-        app:layout_constraintVertical_bias="0.275"
+        app:layout_constraintVertical_bias="0.235"
 
         />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="107dp"
-        android:layout_height="38dp"
-        android:text="@string/nom"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.081"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/topView"
-        app:layout_constraintVertical_bias="0.603" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="97dp"
-        android:layout_height="29dp"
-        android:text="@string/prenom"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/topView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.487" />
 
 
     <TextView
         android:id="@+id/topText"
         android:layout_width="379dp"
         android:layout_height="34dp"
-        android:text="@string/activity_menu"
+        android:text="Choose an activity"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -120,10 +90,10 @@
     <RelativeLayout
         android:layout_width="381dp"
         android:layout_height="115dp"
-        android:background="@color/teal_200"
+        android:background="@color/test2"
         android:elevation="20dp"
         android:padding="10dp"
-
+        android:onClick="restaurants"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
@@ -151,12 +121,13 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="381dp"
         android:layout_height="115dp"
-        android:background="@color/teal_200"
+        android:background="@color/test2"
         android:elevation="20dp"
+        android:onClick="sites"
         android:padding="10dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -182,5 +153,17 @@
 
     </RelativeLayout>
 
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="462dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
 </androidx.constraintlayout.widget.ConstraintLayout>

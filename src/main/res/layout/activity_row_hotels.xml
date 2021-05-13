@@ -28,7 +28,8 @@
             android:text="Main Title"
             android:textColor="#000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
         <TextView
             android:id="@+id/textView2"
@@ -38,23 +39,13 @@
             android:text="Sub Title"
             android:textColor="#a9a9a9"
             android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Add to your trip" />
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_location_on_24" />
 
         <!--so our layout is set-->
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Button" />
+
 
 </LinearLayout>

@@ -81,8 +81,8 @@
         <TextView
             android:id="@+id/topText"
             android:layout_width="379dp"
-            android:layout_height="34dp"
-            android:text="@string/Hotels"
+            android:layout_height="44dp"
+            android:text="Your trips"
             android:textColor="@android:color/black"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -93,10 +93,17 @@
             app:layout_constraintTop_toTopOf="@+id/topView"
             app:layout_constraintVertical_bias="0.585" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listView">
 
-    </ListView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="390dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
 </LinearLayout>

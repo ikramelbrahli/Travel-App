@@ -6,6 +6,7 @@ import com.example.ps4.Models.Ville;
 import com.example.ps4.Models.Voyage;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
@@ -27,15 +28,25 @@ public class VoyageFirestoreManager {
         firebaseFirestore = FirebaseFirestore.getInstance();
         voyageCollectionReference = firebaseFirestore.collection(COLLECTION_NAME);
     }
-    public void getAllVoyages(OnCompleteListener<QuerySnapshot> onCompleteListener)
+    public void getAllVoyages(OnCompleteListener<QuerySnapshot> onCompleteListener , String userid)
     {
-
-        voyageCollectionReference.get().addOnCompleteListener(onCompleteListener);
+        Log.d(TAG,  "test");
+        voyageCollectionReference.whereEqualTo("user_id",userid).get().addOnCompleteListener(onCompleteListener);
 
     }
     public void createDocument(Voyage voyage) {
-        Log.d(TAG,  "test");
+
         voyageCollectionReference.add(voyage);
     }
+    public void deleteContact(String documentId) {
+        DocumentReference documentReference = voyageCollectionReference.document(documentId);
+        documentReference.delete();
+    }
+    public void updateDocument(Voyage contact) {
+        String documentId = contact.getDocumentId();
+        DocumentReference documentReference = voyageCollectionReference.document(documentId);
+        documentReference.set(contact);
+    }
+
 
 }

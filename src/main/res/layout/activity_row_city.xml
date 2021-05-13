@@ -21,6 +21,11 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
             android:id="@+id/textView1"
             android:layout_width="159dp"
             android:layout_height="wrap_content"
@@ -28,7 +33,8 @@
 
             android:textColor="#000"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_location_on_24" />
 
         <TextView
             android:id="@+id/textView2"
@@ -40,9 +46,6 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-
-
-        <!--so our layout is set-->
 
     </LinearLayout>
 

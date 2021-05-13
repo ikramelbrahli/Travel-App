@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PS4"
         android:usesCleartextTraffic="true">
-
+        <activity android:name=".ReservationRestaurantFormActivity"></activity>
+        <activity android:name=".RestaurantDetails" />
+        <activity android:name=".RatingForm" />
+        <activity android:name=".row_rating" />
+        <activity android:name=".EndroitDetails" />
+        <activity android:name=".ReservationRowActivity" />
+        <activity android:name=".ReservationList" />
+        <activity android:name=".VoyageFormEditActivity" />
+        <activity android:name=".TripDetailsActivity" />
+        <activity android:name=".RowTripsActivity" />
         <activity android:name=".TripListActivity" />
         <activity android:name=".ReservationFormActivity" />
         <activity android:name=".RowCityActivity" />
@@ -24,10 +33,10 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".VoyageFormActivity" />
         <activity android:name=".SightsActivity" />
-        <activity android:name=".AccueilActivity" />
         <activity android:name=".DiscoverActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".HotelListMainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +44,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

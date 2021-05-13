@@ -2,6 +2,7 @@ package com.example.ps4.Models;
 
 import com.google.firebase.firestore.DocumentId;
 import com.google.firebase.firestore.IgnoreExtraProperties;
+import com.google.firebase.firestore.ServerTimestamp;
 
 import java.util.Date;
 
@@ -9,14 +10,23 @@ import java.util.Date;
 public class Voyage {
     @DocumentId
     private String documentId;
+    private String user_id ;
     private int budget ;
     private String destination ;
     private String nom_voyage ;
     private String type_voyage ;
-    private Date date_debut ;
-    private Date date_fin ;
+    private String date_debut ;
+    private String date_fin ;
 
-    public Voyage(String documentId, int budget, String destination, String nom_voyage, String type_voyage, Date date_debut, Date date_fin) {
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
+    }
+
+    public Voyage(String documentId, int budget, String destination, String nom_voyage, String type_voyage, String date_debut, String date_fin) {
         this.documentId = documentId;
         this.budget = budget;
         this.destination = destination;
@@ -83,19 +93,19 @@ public class Voyage {
         this.type_voyage = type_voyage;
     }
 
-    public Date getDate_debut() {
+    public String getDate_debut() {
         return date_debut;
     }
 
-    public void setDate_debut(Date date_debut) {
+    public void setDate_debut(String date_debut) {
         this.date_debut = date_debut;
     }
 
-    public Date getDate_fin() {
+    public String getDate_fin() {
         return date_fin;
     }
 
-    public void setDate_fin(Date date_fin) {
+    public void setDate_fin(String date_fin) {
         this.date_fin = date_fin;
     }
 

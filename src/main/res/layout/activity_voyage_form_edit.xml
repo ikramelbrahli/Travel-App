@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoyageFormEditActivity">
+    <View
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="409dp"
+        android:layout_height="82dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="379dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="116dp"
+        android:text="@string/TripForm"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/topView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="102dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="168dp"
+        android:contentDescription="@string/top_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/topView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/travel_icon" />
+
+    <EditText
+        android:id="@+id/nom_voyage"
+        android:layout_width="339dp"
+        android:layout_height="53dp"
+        android:autofillHints=""
+        android:background="@drawable/round_border"
+
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/Trip_title"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <EditText
+        android:id="@+id/budget"
+        android:layout_width="344dp"
+        android:layout_height="54dp"
+        android:autofillHints=""
+        android:background="@drawable/round_border"
+
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="@string/budget"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="352dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_border"
+        android:hint="Type de voyage "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="143dp"
+        android:layout_height="51dp"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="122dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/round_border"
+        android:hint="Date début"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/budget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tvDate2"
+        android:layout_width="122dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/round_border"
+        android:hint="Date fin"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/budget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="303dp"
+        android:layout_height="37dp"
+        android:background="#F6F6F6"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/abril_fatface"
+        android:textSize="20sp"
+        android:text="Is your trip solo or in group ?"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/budget" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="68dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toTopOf="@+id/nom_voyage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText"
+        app:layout_constraintVertical_bias="0.612"
+        app:srcCompat="@drawable/tour_bus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,7 @@
             android:id="@+id/topView"
             android:layout_width="0dp"
             android:layout_height="150dp"
-            android:background="@color/teal_200"
+            android:background="@color/test"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -51,6 +51,7 @@
             android:id="@+id/textView"
             android:layout_width="107dp"
             android:layout_height="38dp"
+            android:fontFamily="@font/allan"
             android:text="@string/nom"
             android:textColor="@android:color/white"
             android:textSize="20dp"
@@ -66,6 +67,7 @@
             android:id="@+id/textView3"
             android:layout_width="97dp"
             android:layout_height="29dp"
+            android:fontFamily="@font/allan"
             android:text="@string/prenom"
             android:textColor="@android:color/white"
             android:textSize="20dp"
@@ -82,6 +84,7 @@
             android:id="@+id/topText"
             android:layout_width="379dp"
             android:layout_height="34dp"
+            android:fontFamily="sans-serif-black"
             android:text="@string/Discover"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -93,37 +96,19 @@
             app:layout_constraintTop_toTopOf="@+id/topView"
             app:layout_constraintVertical_bias="0.585" />
 
-        <Button
-            android:id="@+id/logout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Logout"
-            app:layout_constraintBottom_toTopOf="@+id/topText"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.811"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:onClick="logout"
-            app:layout_constraintVertical_bias="0.588"
-           />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="match_parent"
-        android:layout_height="88dp"
 
-        android:drawableLeft="@drawable/tour_bus"
-        android:text="Start planning"
-        android:onClick="voyage_form"
-        app:layout_constraintBottom_toBottomOf="@+id/view5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.867" />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="390dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </LinearLayout>

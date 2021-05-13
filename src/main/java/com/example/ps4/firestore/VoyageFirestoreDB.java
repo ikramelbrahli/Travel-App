@@ -12,7 +12,9 @@ public class VoyageFirestoreDB {
     public static final String FIELD_DATE_FIN = "date_fin";
     public static final String FIELD_DESTINATION= "destination";
     public static final String FIELD_NOM_VOYAGE= "nom_voyage";
- //   public static final String FIELD_TYPE_VOYAGE= "type_voyage";
+    public static final String FIELD_TYPE_VOYAGE= "type_voyage";
+    public static final String FIELD_USER_ID= "user_id";
+
 
     public VoyageFirestoreDB() {
     }

@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
                 //Do any action here. Now we are moving to next page
                 Intent mySuperIntent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(mySuperIntent);
-
-                //This 'finish()' is for exiting the app when back button pressed from Home page which is ActivityHome
                 finish();
 
             }

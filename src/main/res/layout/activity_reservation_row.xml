@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".ReservationRowActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="79dp"
+        android:layout_height="86dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_baseline_local_activity_24" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/reservationName"
+            android:layout_width="250dp"
+            android:layout_height="26dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="111dp"
+            android:text="reservation name"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_width="177dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="123dp"
+            android:layout_marginBottom="62dp"
+            android:text="destination"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="145dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="156dp"
+            android:layout_marginBottom="14dp"
+            android:text="date_debut"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_calendar_today_24" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="148dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="13dp"
+            android:text="date_debut"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_calendar_today_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="51dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="236dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="66dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
