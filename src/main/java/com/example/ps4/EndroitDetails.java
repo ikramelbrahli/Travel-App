@@ -111,7 +111,13 @@ document_id_endroit = bundle.getString("doc_id_endroit");
         description=bundle.getString(HotelsFirestoreDbContract.FIELD_DESCRIPTION);
             imageurl = bundle.getString(ReservationFirestoreDB.FIELD_IMAGE_URL);
         Log.d("id_doc_endroit", "doc_id_endroit" +document_id_endroit);
-
+      /*  if(prix.equals(null)){
+            prix="600";
+        }*/
+        description = bundle.getString(RestaurantFirestoreDB.FIELD_DESCRIPTION);
+       /* if(description.equals(null)){
+            description="Angle Rue Taha Hussein et rue Abou chouaib addoukkali Résidence ";
+        }*/
             AddReservation = findViewById(R.id.button3);
             AddReservation.setOnClickListener(new AddReservationButtonOnClickListener());
             floatingActionButton2 = findViewById(R.id.floatingActionButton2);
@@ -185,6 +191,12 @@ document_id_endroit = bundle.getString("doc_id_endroit");
                         case R.id.nav_cities :
 
                             startActivity(new Intent(getApplicationContext(), CitiesActivity.class));
+
+                            finish();
+                            break;
+                        case R.id.nav_recommendations :
+
+                            startActivity(new Intent(getApplicationContext(), RecommendationActivity.class));
 
                             finish();
                             break;

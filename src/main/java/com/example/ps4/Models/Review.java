@@ -8,6 +8,24 @@ public class Review {
     private float rating ;
     private String user_nom;
     private String user_prenom ;
+    private float pourcentage ;
+    private String type ;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public float getPourcentage() {
+        return pourcentage;
+    }
+
+    public void setPourcentage(float pourcentage) {
+        this.pourcentage = pourcentage;
+    }
 
     public String getUser_nom() {
         return user_nom;

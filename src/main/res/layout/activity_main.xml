@@ -4,32 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/test"
+    android:background="@color/white"
+    android:backgroundTint="#FBF3F3"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="233dp"
-        android:layout_height="190dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="96dp"
+        android:layout_width="264dp"
+        android:layout_height="206dp"
         android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/travel_icon" />
+        app:layout_constraintVertical_bias="0.26"
+        app:srcCompat="@drawable/globe" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="331dp"
         android:layout_height="114dp"
         android:text="@string/plannifiez_votre_voyage_avec_tripplanner"
+        android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold|italic"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.628" />
 </androidx.constraintlayout.widget.ConstraintLayout>

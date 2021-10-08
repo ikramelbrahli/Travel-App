@@ -38,7 +38,6 @@ public class RecyclerViewAdapterReservation extends RecyclerView.Adapter<Recycle
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_reservation_row, parent, false);
         Log.d("HotelListMainActivity", "done2" );
         itemView.setOnClickListener((View.OnClickListener) reservationListRecyclerViewOnItemClickListener);
-
         return new RecyclerViewAdapterReservation.ViewHolder(itemView);
     }
 

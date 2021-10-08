@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ProgressBar;
 
+import com.example.ps4.Models.Recommendation;
+
 public class MainActivity extends AppCompatActivity {
     ProgressBar splashProgress;
-    int SPLASH_TIME = 3000; //This is 3 seconds
+    int SPLASH_TIME = 6000; //This is 3 seconds
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

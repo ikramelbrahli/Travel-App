@@ -11,6 +11,16 @@
         android:title="My trips"
         />
     <item
+        android:id="@+id/nav_recommendations"
+        android:icon="@drawable/ic_baseline_recommend_24"
+        android:title="Recommendations"
+        />
+    <item
+        android:id="@+id/nav_chatbot"
+        android:icon="@drawable/ic_chatbot"
+        android:title="chatbot"
+        />
+    <item
         android:id="@+id/nav_logout"
         android:icon="@drawable/ic_baseline_logout_24"
         android:title="Logout"

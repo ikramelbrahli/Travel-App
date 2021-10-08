@@ -94,7 +94,7 @@ public class CitiesActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         fstore = FirebaseFirestore.getInstance();
         userID = fAuth.getCurrentUser().getUid();
-
+/*
         DocumentReference documentReference = fstore.collection("User").document(userID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
@@ -104,7 +104,7 @@ public class CitiesActivity extends AppCompatActivity {
             }
         });
         DocumentReference newdocumentReference = fstore.collection("Ville").document("imageURI");
-
+*/
 
       /*  ArrayList<Ville> villes = new ArrayList<>();
         CitiesActivity.MyAdapter adapter1 = new CitiesActivity.MyAdapter(this , villes ) ;
@@ -135,6 +135,12 @@ public class CitiesActivity extends AppCompatActivity {
                         case R.id.nav_cities :
 
                             startActivity(new Intent(getApplicationContext(), CitiesActivity.class));
+
+                            finish();
+                            break;
+                        case R.id.nav_recommendations :
+
+                            startActivity(new Intent(getApplicationContext(), RecommendationActivity.class));
 
                             finish();
                             break;

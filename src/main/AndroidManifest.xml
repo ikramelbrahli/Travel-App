@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PS4"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ReservationRestaurantFormActivity"></activity>
+        <activity android:name=".RecommendationRestaurant"></activity>
+        <activity android:name=".RecommendationActivity" />
+        <activity android:name=".Testing" />
+        <activity android:name=".TestingMLActivity" />
+        <activity android:name=".ReservationRestaurantFormActivity" />
         <activity android:name=".RestaurantDetails" />
         <activity android:name=".RatingForm" />
         <activity android:name=".row_rating" />

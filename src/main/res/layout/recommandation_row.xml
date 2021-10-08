@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".RowHotelsActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="152dp"
+        android:layout_height="129dp"
+        android:background="#FFFFFF"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Hotel name"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="ville"
+            android:textColor="#a9a9a9"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textColor="#1FAA25"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text=" x% of this hotel's reviews are positive " />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

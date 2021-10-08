@@ -126,6 +126,13 @@ public class ReservationList extends AppCompatActivity {
 
                             finish();
                             break;
+                        case R.id.nav_recommendations :
+
+                            startActivity(new Intent(getApplicationContext(), RecommendationActivity.class));
+
+                            finish();
+                            break;
+
 
                     }
                    /* getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -208,7 +215,9 @@ public class ReservationList extends AppCompatActivity {
                 intent.putExtra("doc_id_endroit", contact.getEndroitID());
                 intent.putExtra(ReservationFirestoreDB.FIELD_IMAGE_URL, contact.getImageURI());
                 intent.putExtra(HotelsFirestoreDbContract.FIELD_HOTEL_NAME, contact.getHotel_name());
-
+                intent.putExtra(HotelsFirestoreDbContract.FIELD_DESCRIPTION , "Angle Rue Taha Hussein et rue Abou chouaib addoukkali Résidence");
+                intent.putExtra(HotelsFirestoreDbContract.FIELD_PRIX , "500");
+                intent.putExtra("welp" , "Depends on the meal !");
                 Log.d("endroit details", "hotel name reserv list on click" + contact.getImageURI());
                 Log.d("endroit details", "CONTACT" + imageurl + contact.getDocumentId() + contact.getDate_fin() + contact.getImageURI()+ contact.getEndroitID() );
                startActivity(intent);

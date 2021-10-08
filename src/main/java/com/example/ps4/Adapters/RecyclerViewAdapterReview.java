@@ -19,6 +19,7 @@ import com.example.ps4.Models.Review;
 import com.example.ps4.Models.Ville;
 import com.example.ps4.R;
 
+import java.text.BreakIterator;
 import java.util.List;
 
 import static com.squareup.picasso.Picasso.get;
@@ -64,6 +65,7 @@ public class RecyclerViewAdapterReview extends RecyclerView.Adapter<RecyclerView
         return villeList.size();
     }
     static class ViewHolder extends RecyclerView.ViewHolder {
+
 
 
         ImageView image_url;

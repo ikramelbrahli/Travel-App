@@ -191,6 +191,12 @@ public class ReservationRestaurantFormActivity extends AppCompatActivity {
 
                             finish();
                             break;
+                        case R.id.nav_recommendations :
+
+                            startActivity(new Intent(getApplicationContext(), RecommendationActivity.class));
+
+                            finish();
+                            break;
 
                     }
                    /* getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

@@ -76,6 +76,7 @@ public class RestaurantDetails extends AppCompatActivity {
     String userID;
     private String type_endroit;
     private String prix;
+    private String ouf ;
 
 
     @Override
@@ -87,6 +88,7 @@ public class RestaurantDetails extends AppCompatActivity {
         reviewListRecyclerView = findViewById(R.id.recyclerview);
         reviewListRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         document_id_reservation = bundle.getString("ReservationFirestoreDB.DOCUMENT_ID");
+        ouf = bundle.getString("welp");
 
         reservation.setDocumentId(document_id_reservation);
         document_id_voyage = bundle.getString(VoyageFirestoreDB.DOCUMENT_ID);
@@ -103,7 +105,13 @@ public class RestaurantDetails extends AppCompatActivity {
         reservation.setEndroitID(document_id_endroit);
         hotel_name = bundle.getString(FIELD_RESTAURANT_NAME);
         prix = bundle.getString(HotelsFirestoreDbContract.FIELD_PRIX);
+      /*  if(prix.equals(0)){
+            prix="600";
+        }
         description = bundle.getString(RestaurantFirestoreDB.FIELD_DESCRIPTION);
+        if(description.equals(null)){
+            description="Angle Rue Taha Hussein et rue Abou chouaib addoukkali Résidence ";
+        }*/
         imageurl = bundle.getString(ReservationFirestoreDB.FIELD_IMAGE_URL);
         Log.d("id_doc_endroit", "restau's name" + hotel_name);
         reservation.setHotel_name(hotel_name);
@@ -180,6 +188,12 @@ public class RestaurantDetails extends AppCompatActivity {
                         case R.id.nav_cities:
 
                             startActivity(new Intent(getApplicationContext(), CitiesActivity.class));
+
+                            finish();
+                            break;
+                        case R.id.nav_recommendations :
+
+                            startActivity(new Intent(getApplicationContext(), RecommendationActivity.class));
 
                             finish();
                             break;

@@ -6,6 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ReservationFormActivity">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="246dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Reservation starts on "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
     <View
         android:id="@+id/topView"
         android:layout_width="0dp"
@@ -14,6 +29,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="91dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toTopOf="@+id/topText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/globe" />
 
     <View
         android:id="@+id/view5"
@@ -27,11 +54,12 @@
 
     <TextView
         android:id="@+id/topText"
-        android:layout_width="437dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="391dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="116dp"
         android:text="@string/ReservationForm"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -42,63 +70,64 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="102dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="168dp"
-        android:contentDescription="@string/top_icon"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/topView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/travel_icon" />
-
     <TextView
         android:id="@+id/tvDate"
-        android:layout_width="122dp"
-        android:layout_height="43dp"
+        android:layout_width="394dp"
+        android:layout_height="39dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/round_border"
-        android:hint="Date début"
+        android:hint="Start date"
         android:textAlignment="center"
         android:textSize="20sp"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintVertical_bias="0.434" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="246dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Reservation Ends on "
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
     <TextView
         android:id="@+id/tvDate2"
-        android:layout_width="122dp"
-        android:layout_height="43dp"
+        android:layout_width="394dp"
+        android:layout_height="39dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/round_border"
-        android:hint="Date fin"
+        android:hint="End date"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/okButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toEndOf="@+id/tvDate"
-        app:layout_constraintTop_toTopOf="@+id/topView"
-        app:layout_constraintVertical_bias="0.526" />
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        app:layout_constraintVertical_bias="0.532" />
 
     <Button
         android:id="@+id/okButton"
-        android:layout_width="143dp"
+        android:layout_width="199dp"
         android:layout_height="51dp"
         android:text="Add reservation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
+        app:layout_constraintVertical_bias="0.717" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

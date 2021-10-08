@@ -30,7 +30,6 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
         Bundle bundle = getIntent().getExtras();
-
         /*********/
         destination = bundle.getString(FIELD_DESTINATION);
         voyage.setDestination(destination);
@@ -38,7 +37,6 @@ public class MenuActivity extends AppCompatActivity {
         document_id_voyage = bundle.getString(DOCUMENT_ID);
         voyage.setDestination(destination);
         voyage.setDocumentId(document_id_voyage);
-
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemReselectedListener(navListener);
     }
@@ -64,6 +62,12 @@ public class MenuActivity extends AppCompatActivity {
                         case R.id.nav_cities :
 
                             startActivity(new Intent(getApplicationContext(), CitiesActivity.class));
+
+                            finish();
+                            break;
+                        case R.id.nav_recommendations :
+
+                            startActivity(new Intent(getApplicationContext(), RecommendationActivity.class));
 
                             finish();
                             break;

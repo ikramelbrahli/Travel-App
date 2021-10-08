@@ -17,6 +17,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="91dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toTopOf="@+id/topText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/globe" />
+
     <View
         android:id="@+id/view5"
         android:layout_width="409dp"
@@ -32,6 +44,7 @@
         android:layout_width="379dp"
         android:layout_height="44dp"
         android:text="Trip Details"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -48,6 +61,7 @@
         android:fontFamily="@font/abril_fatface"
         android:includeFontPadding="false"
         android:text="Date - destination"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="@+id/view5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,12 +100,13 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="149dp"
-        android:layout_height="26dp"
+        android:layout_width="135dp"
+        android:layout_height="49dp"
         android:layout_marginTop="64dp"
         android:fontFamily="@font/abril_fatface"
         android:text="Date"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        android:textSize="13dp"
         app:drawableLeftCompat="@drawable/ic_baseline_calendar_today_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.686"
@@ -116,7 +131,7 @@
         android:id="@+id/button6"
         android:layout_width="416dp"
         android:layout_height="78dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="188dp"
         android:drawableRight="@drawable/booking_icon"
         android:foregroundTint="#E91E63"
         android:text="Your reservations"

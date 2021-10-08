@@ -212,6 +212,12 @@ public class VoyageFormActivity extends AppCompatActivity implements AdapterView
 
                             finish();
                             break;
+                        case R.id.nav_recommendations :
+
+                            startActivity(new Intent(getApplicationContext(), RecommendationActivity.class));
+
+                            finish();
+                            break;
 
                     }
                    /* getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

@@ -91,23 +91,26 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:drawableLeftCompat="@drawable/ic_baseline_calendar_today_24" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton3"
-            android:layout_width="51dp"
-            android:layout_height="56dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="236dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="14dp"
-            android:layout_marginBottom="66dp"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_delete" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="58dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_delete" />
 
-
+</RelativeLayout>
     </RelativeLayout>
 
 

@@ -63,13 +63,27 @@
             android:id="@+id/textView11"
             android:layout_width="387dp"
             android:layout_height="49dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:fontFamily="@font/abril_fatface"
             android:text="Destination"
             android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
-
+            android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.291"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="385dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Reviews"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+            android:textColor="@color/iconish"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.23"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -103,8 +117,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview"
-            android:layout_width="404dp"
-            android:layout_height="141dp"
+            android:layout_width="405dp"
+            android:layout_height="175dp"
             android:layout_marginTop="8dp"
             android:elevation="@dimen/activity_horizontal_margin"
             app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
@@ -112,19 +126,21 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11"
-            app:layout_constraintVertical_bias="0.042" />
+            app:layout_constraintVertical_bias="0.226" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
-            android:layout_width="410dp"
-            android:layout_height="57dp"
+            android:layout_width="438dp"
+            android:layout_height="56dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="4dp"
             android:background="?android:attr/windowBackground"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.518"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintVertical_bias="1.0"
             app:menu="@menu/bottom_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -134,23 +150,23 @@
             android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintHorizontal_bias="0.983"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recyclerview"
-            app:layout_constraintVertical_bias="0.007"
+            app:layout_constraintVertical_bias="0.129"
             app:srcCompat="@drawable/ic_baseline_rate_review_24" />
 
         <TextView
             android:id="@+id/textView14"
             android:layout_width="320dp"
             android:layout_height="40dp"
-            android:layout_marginTop="224dp"
+            android:layout_marginTop="276dp"
             android:fontFamily="@font/abril_fatface"
             android:text="Give us your feedback"
             android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
 
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintHorizontal_bias="0.076"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 

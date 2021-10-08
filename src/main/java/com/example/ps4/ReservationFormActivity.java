@@ -193,8 +193,15 @@ public class ReservationFormActivity extends AppCompatActivity {
 
                             finish();
                             break;
+                        case R.id.nav_recommendations :
+
+                            startActivity(new Intent(getApplicationContext(), RecommendationActivity.class));
+
+                            finish();
+                            break;
 
                     }
+
                    /* getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();*/
 
